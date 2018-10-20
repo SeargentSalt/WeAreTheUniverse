@@ -13,7 +13,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        view.backgroundColor = .green
+        let size = CGRect.init(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
+        view.addSubview(MainView(frame: size))
     }
 
 
