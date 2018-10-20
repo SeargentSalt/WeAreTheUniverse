@@ -16,6 +16,10 @@ class ViewController: UIViewController {
         let size = CGRect.init(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
         view.addSubview(MainView(frame: size))
     }
+    
+    @objc func SubmitPicture() {
+        print("hi")
+    }
 
 
 }

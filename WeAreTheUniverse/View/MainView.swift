@@ -18,16 +18,40 @@ class MainView: UIView {
         return text
     }()
     
+    let backgroundImage: UIImageView = {
+        let img = UIImageView();
+        img.image = UIImage(named: "Main")
+        img.translatesAutoresizingMaskIntoConstraints = false
+        return img
+    }()
+    
+    let submitButton: UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(ViewController.SubmitPicture), for: .touchUpInside)
+        return button
+    }()
+    
     func setUpConstraints() {
-        testText.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-        testText.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+        
+        submitButton.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        submitButton.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
+        submitButton.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+        submitButton.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+        
+        backgroundImage.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        backgroundImage.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
+        backgroundImage.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+        backgroundImage.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         addSubview(testText)
+        addSubview(backgroundImage)
+        addSubview(submitButton)
         setUpConstraints()
-        self.backgroundColor = .blue
+    
     }
     
     required init?(coder aDecoder: NSCoder) {
