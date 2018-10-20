@@ -47,7 +47,6 @@ class MainView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        addSubview(testText)
         addSubview(backgroundImage)
         addSubview(submitButton)
         setUpConstraints()
