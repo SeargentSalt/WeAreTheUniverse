@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D4016E7217CD73300CA8711 /* OutputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4016E6217CD73300CA8711 /* OutputController.swift */; };
 		2D6B4811217B5EF700CC6D09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6B4810217B5EF700CC6D09 /* AppDelegate.swift */; };
 		2D6B4813217B5EF700CC6D09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6B4812217B5EF700CC6D09 /* ViewController.swift */; };
 		2D6B4819217B5EF700CC6D09 /* WeAreTheUniverse.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D6B4817217B5EF700CC6D09 /* WeAreTheUniverse.xcdatamodeld */; };
@@ -15,6 +16,7 @@
 		2D6B4834217B5EF800CC6D09 /* WeAreTheUniverseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6B4833217B5EF800CC6D09 /* WeAreTheUniverseUITests.swift */; };
 		2D6B4845217B689B00CC6D09 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6B4844217B689B00CC6D09 /* MainView.swift */; };
 		2D6B4847217B989500CC6D09 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6B4846217B989500CC6D09 /* SplashScreen.swift */; };
+		2DA581EB217CC98500E82C30 /* ViewTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA581EA217CC98500E82C30 /* ViewTwo.swift */; };
 		2DC838DF217BC9C700673F02 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC838DE217BC9C700673F02 /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D4016E6217CD73300CA8711 /* OutputController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputController.swift; sourceTree = "<group>"; };
 		2D6B480D217B5EF700CC6D09 /* WeAreTheUniverse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeAreTheUniverse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D6B4810217B5EF700CC6D09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D6B4812217B5EF700CC6D09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +53,7 @@
 		2D6B4835217B5EF800CC6D09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D6B4844217B689B00CC6D09 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		2D6B4846217B989500CC6D09 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		2DA581EA217CC98500E82C30 /* ViewTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTwo.swift; sourceTree = "<group>"; };
 		2DC838DE217BC9C700673F02 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				2D6B4844217B689B00CC6D09 /* MainView.swift */,
+				2DA581EA217CC98500E82C30 /* ViewTwo.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -144,6 +149,7 @@
 				2D6B4846217B989500CC6D09 /* SplashScreen.swift */,
 				2D6B4812217B5EF700CC6D09 /* ViewController.swift */,
 				2DC838DE217BC9C700673F02 /* ViewController2.swift */,
+				2D4016E6217CD73300CA8711 /* OutputController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -290,6 +296,8 @@
 				2D6B4811217B5EF700CC6D09 /* AppDelegate.swift in Sources */,
 				2D6B4819217B5EF700CC6D09 /* WeAreTheUniverse.xcdatamodeld in Sources */,
 				2DC838DF217BC9C700673F02 /* ViewController2.swift in Sources */,
+				2D4016E7217CD73300CA8711 /* OutputController.swift in Sources */,
+				2DA581EB217CC98500E82C30 /* ViewTwo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

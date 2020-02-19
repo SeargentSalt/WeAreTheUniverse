@@ -16,6 +16,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
 
     var selectedPicture = UIImageView()
     
+    
+    
     var displayPicture: UIImageView = {
         let img = UIImageView()
         img.translatesAutoresizingMaskIntoConstraints = true
@@ -29,7 +31,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         // Do any additional setup after loading the view, typically from a nib.
         let size = CGRect.init(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
         view.addSubview(MainView(frame: size))
-        view.addSubview(displayPicture)
+        //view.addSubview(displayPicture)
         checkPermission()
     }
     
@@ -51,6 +53,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         }))
         actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         self.present(actionSheet, animated: true, completion: nil)
+        
+        
     
     }
     
@@ -75,6 +79,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         
         let next:ViewController2 = ViewController2()
         self.present(next, animated: true, completion: nil)
+        
+        
         
     }
     func resizeImage(image: UIImage, targetSize: CGSize) -> UIImage {
@@ -132,6 +138,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
             print("User has denied the permission.")
         }
     }
+    
 
 
 

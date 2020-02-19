@@ -23,8 +23,8 @@ class SplashScreen: UIViewController {
         SetupConstraints()
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {
             let next:ViewController = ViewController()
-            let modalStyle: UIModalTransitionStyle = UIModalTransitionStyle.partialCurl
-            next.modalTransitionStyle = modalStyle
+            //let modalStyle: UIModalTransitionStyle = UIModalTransitionStyle.partialCurl
+            //next.modalTransitionStyle = modalStyle
             self.present(next, animated: true, completion: nil)
         })
     
